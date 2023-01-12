@@ -1,0 +1,82 @@
+/* simonetta-regular - latin */
+@font-face {
+    font-family: 'Simonetta';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/simonetta-v23-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/simonetta-v23-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* simonetta-900 - latin */
+@font-face {
+    font-family: 'Simonetta';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+        url('../fonts/simonetta-v23-latin-900.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/simonetta-v23-latin-900.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Simonetta';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 30rem;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    padding-block: 1.5rem;
+}
+
+.informations {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.simon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    position: relative;
+    margin-block-start: 3rem;
+}
+
+.card {
+    width: 13rem;
+    height: 13rem;
+    margin: auto;
+    border-radius: 5rem;
+    opacity: 0.5;
+}
+
+.command {
+    position: absolute;
+    width: 8rem;
+    left: calc(50% - 4rem);
+    height: 4rem;
+    top: calc(50% - 2rem);
+    border-radius: 2rem;
+    border: 2px solid grey;
+}
+
+.main-footer {
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-block: 1rem;
+}
